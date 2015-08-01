@@ -1,4 +1,4 @@
-package main
+package quest
 
 import (
 	"fmt"
@@ -55,7 +55,6 @@ func (w *Worker) Start() {
 }
 
 // Stop tells the worker to stop listening for work requests.
-//
 // Note that the worker will only stop *after* it has finished its work.
 func (w *Worker) Stop() {
 	go func() {
